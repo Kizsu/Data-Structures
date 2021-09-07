@@ -22,11 +22,13 @@ private:
 
 public:
 	LinkedList();
+	~LinkedList();
 
-//	void insert(int index, std::string key) {};
+	void insert(int index, std::string key);
 	void append(std::string key);
 
-	std::string pop() { return ""; };
+	Node* pop_front();
+	Node* pop_back();
 	void remove(int index);
 
 	std::string output();
